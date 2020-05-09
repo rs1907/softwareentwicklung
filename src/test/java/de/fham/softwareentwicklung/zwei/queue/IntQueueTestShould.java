@@ -8,7 +8,7 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 class IntQueueTestShould {
 
-    QueueInterface queue;
+    Queue queue;
 
     @BeforeEach
     void setUp() {
@@ -17,10 +17,17 @@ class IntQueueTestShould {
 
     @Test
     void returnElementsInFiFoOrder() {
+        // Setup - Prepare the tast
+
+        Queue queue = new IntQueue();
         queue.add(1);
         queue.add(2);
 
-        assertThat(queue.element()).isEqualTo(1);
+        // Execute
+        int element = queue.element();
+
+        // Validate
+        assertThat(element).isEqualTo(1);
     }
 
     @Test

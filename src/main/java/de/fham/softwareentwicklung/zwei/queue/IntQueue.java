@@ -1,10 +1,9 @@
 package de.fham.softwareentwicklung.zwei.queue;
 
-public class IntQueue implements QueueInterface {
+public class IntQueue implements Queue {
 
     @Override
     public void add(int i) {
-
     }
 
     @Override
@@ -14,6 +13,5 @@ public class IntQueue implements QueueInterface {
 
     @Override
     public void remove() {
-
     }
 }

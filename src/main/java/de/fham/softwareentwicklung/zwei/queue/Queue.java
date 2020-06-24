@@ -5,5 +5,5 @@ public interface Queue {
 
     int element();
 
-    void remove();
+    void remove() throws EmptyQueueException;
 }

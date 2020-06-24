@@ -41,11 +41,15 @@ class IntQueueTestShould {
 
     @Test
     void throwsEmptyQueueExceptionWhenRemoveFromEmptyQueue() {
+
         assertThatThrownBy(() -> queue.remove()).isInstanceOf(EmptyQueueException.class);
+
     }
 
     @Test
     void throwsEmptyQueueExceptionWhenGetElementFromEmptyQueue() {
+
         assertThatThrownBy(() -> queue.element()).isInstanceOf(EmptyQueueException.class);
+
     }
 }

@@ -6,16 +6,19 @@ public class Runnable {
 
         Student student = new Student();
 
+        System.out.println("Student:");
         student.sayHello();
 
 //        Überschreiben
         Programmierer person = new Programmierer();
 
-        Dozent dozent = new Dozent();
-
-//        Übeladen
+        System.out.println("Programmierer:");
         person.sayHello();
 
+//        Übeladen
+        Dozent dozent = new Dozent();
+
+        System.out.println("Dozent:");
         dozent.sayHello("liebe Studenten!");
     }
 }

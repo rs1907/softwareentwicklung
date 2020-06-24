@@ -11,6 +11,11 @@ public class Programmierer extends Person {
         super(name, birthdate);
     }
 
+    @Override
+    public String getJobTitle() {
+        return "Programmierer";
+    }
+
     public int getLinesOfCode() {
         return linesOfCode;
     }

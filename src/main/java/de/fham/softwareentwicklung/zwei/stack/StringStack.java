@@ -20,6 +20,5 @@ public class StringStack implements StackInterface {
     @Override
     public String pop() {
         return elements.remove(elements.size() - 1);
-        // new comment
     }
 }

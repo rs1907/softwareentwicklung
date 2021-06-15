@@ -1,9 +1,9 @@
 package de.fham.softwareentwicklung.zwei.queue;
 
-public interface Queue {
+public interface QueueInterface {
     void add(int i);
 
     int element();
 
-    void remove();
+    void remove() throws EmptyQueueException;
 }

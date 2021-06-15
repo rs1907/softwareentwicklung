@@ -1,14 +1,12 @@
 package de.fham.softwareentwicklung.zwei.queue;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatThrownBy;
+import static org.assertj.core.api.Assertions.*;
 
 class IntQueueTestShould {
 
-    Queue queue;
+    QueueInterface queue;
 
     @BeforeEach
     void setUp() {
@@ -18,8 +16,6 @@ class IntQueueTestShould {
     @Test
     void returnElementsInFiFoOrder() {
         // Setup - Prepare the tast
-
-        Queue queue = new IntQueue();
         queue.add(1);
         queue.add(2);
 
@@ -31,7 +27,7 @@ class IntQueueTestShould {
     }
 
     @Test
-    void removeElementsInFiFoOrder() {
+    void removeElementsInFiFoOrder() throws EmptyQueueException {
         queue.add(1);
         queue.add(2);
 
@@ -40,8 +36,12 @@ class IntQueueTestShould {
     }
 
     @Test
-    void throwsEmptyQueueExceptionWhenRemoveFromEmptyQueue() {
-        assertThatThrownBy(() -> queue.remove()).isInstanceOf(EmptyQueueException.class);
+    void throwsEmptyQueueExceptionWhenRemoveFromEmptyQueue() throws EmptyQueueException {
+
+        queue.remove();
+
+        System.out.println("We will get here!");
+
     }
 
     @Test

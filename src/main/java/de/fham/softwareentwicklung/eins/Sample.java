@@ -6,6 +6,7 @@ package de.fham.softwareentwicklung.eins;
 // import von allen Klassen, die sich in dem Ordner java.swing befinden
 
 
+
 // Beschreibung der Klasse
 public class Sample {
 

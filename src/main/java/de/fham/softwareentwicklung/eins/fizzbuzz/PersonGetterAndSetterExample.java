@@ -1,6 +1,6 @@
 package de.fham.softwareentwicklung.eins.fizzbuzz;
 
-public class Person {
+public class PersonGetterAndSetterExample {
     private String vorname;
 
     public void setVorname(String vorname) {

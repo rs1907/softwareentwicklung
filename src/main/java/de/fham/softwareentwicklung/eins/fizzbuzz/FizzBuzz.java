@@ -33,7 +33,7 @@ public class FizzBuzz {
         int counter = 1;
         int stopAt = 100;
 
-        while (1 <= 100) {
+        while (counter <= stopAt) {
             if (moduloWithoutRest(counter, 3)) {
                 printLn("Fizz");
             }

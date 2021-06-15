@@ -1,4 +1,4 @@
-package de.fham.softwareentwicklung.zwei.abstraktion;
+package de.fham.softwareentwicklung.zwei.abstraktion.secondexample;
 
 import java.time.LocalDate;
 

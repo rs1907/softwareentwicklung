@@ -11,7 +11,7 @@ public class FizzBuzz {
     private static void firstFizzBuzzer() {
         String output;
 
-        for (int i = 0; i <= 100; i++){
+        for (int i = 1; i <= 100; i++){
             output = "";
             if (moduloWithoutRest(i, 3)) {
                 output += "Fizz";
@@ -33,7 +33,7 @@ public class FizzBuzz {
         int counter = 1;
         int stopAt = 100;
 
-        while (1 <= 100) {
+        while (counter <= stopAt) {
             if (moduloWithoutRest(counter, 3)) {
                 printLn("Fizz");
             }
@@ -54,8 +54,8 @@ public class FizzBuzz {
         System.out.println(toPrint);
     }
 
-    private static boolean moduloWithoutRest(int counter, int i) {
+    private static boolean moduloWithoutRest(int counter, int moduloNumber) {
 
-        return counter % i == 0;
+        return counter % moduloNumber == 0;
     }
 }

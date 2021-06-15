@@ -1,4 +1,4 @@
-package de.fham.softwareentwicklung.zwei.ploymorphie;
+package de.fham.softwareentwicklung.zwei.ploymorphie.secondExample;
 
 public abstract class Person {
 
